@@ -1,10 +1,22 @@
+import BannerBg from "@/components/module/BannerBg";
+import InformationBox from "@/components/module/InformationBox";
+import RateStar from "@/components/module/RateStar";
+import SearchForm from "@/components/module/SearchForm";
+import Services from "@/components/module/Services";
 import Banner from "@/components/template/Banner";
 
 export default function Home() {
   return (
     <div>
-      <Banner />
-      RoHa Car project
+      <BannerBg/>
+      <SearchForm/>
+      <RateStar/>
+      <InformationBox/>
+      <Services/>
+      {/* <BannerBg/>
+      <SearchForm/> */}
+      {/* <Banner /> */}
+     
     </div>
   );
 }
