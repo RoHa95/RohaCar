@@ -1,6 +1,8 @@
-function Hatchback() {
+function Hatchback({ className = "" }) {
   return (
     <svg
+      className={className}
+      fill="currentColor"
       x="0px"
       y="0px"
       width="30px"

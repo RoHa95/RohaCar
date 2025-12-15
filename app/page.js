@@ -1,4 +1,5 @@
 import BannerBg from "@/components/module/BannerBg";
+import Category from "@/components/module/Category";
 import InformationBox from "@/components/module/InformationBox";
 import RateStar from "@/components/module/RateStar";
 import SearchForm from "@/components/module/SearchForm";
@@ -12,7 +13,7 @@ export default function Home() {
       <SearchForm/>
       <RateStar/>
       <InformationBox/>
-      <Services/>
+      <Category/>
       {/* <BannerBg/>
       <SearchForm/> */}
       {/* <Banner /> */}

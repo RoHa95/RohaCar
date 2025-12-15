@@ -7,7 +7,9 @@ import { FaMinusCircle } from "react-icons/fa";
 
 function InformationBox() {
   return (
-    <div className=" bg-indigo-900 w-full p-3 pb-8">
+   <div className=" bg-indigo-900 w-full">
+     
+    <div className=" bg-indigo-900 mx-auto max-w-7xl w-full p-3 pb-8">
       <div className=" bg-gray-200 rounded-lg flex-col md:flex md:flex-row md:items-center md:justify-between overflow-hidden">
         <div className=" flex items-center p-6 w-full justify-between border-b md:border-r cursor-pointer border-gray-400 border-0">
           <div>
@@ -57,6 +59,7 @@ function InformationBox() {
         </div>
       </div>
     </div>
+   </div>
   );
 }
 

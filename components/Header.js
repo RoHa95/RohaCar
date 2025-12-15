@@ -12,7 +12,7 @@ function Header() {
         <div className=" flex items-center justify-start  w-fit h-full gap-x-2">
           <IoIosMenu className=" lg:hidden font-bold text-2xl text-gray-600 cursor-pointer" />
           <h1 className="italic font-bold text-xl text-indigo-700 ml-4">
-            <Link href={"/"}>
+            <Link href={"/"} replace>
             RoHaCar
             </Link>
             

@@ -1,6 +1,14 @@
-function Suv() {
+function Suv({ className = "" }) {
   return (
-    <svg x="0px" y="0px" width="30px" height="30px" viewBox="0 0 99.488 99.488">
+    <svg
+      className={className}
+      fill="currentColor"
+      x="0px"
+      y="0px"
+      width="30px"
+      height="30px"
+      viewBox="0 0 99.488 99.488"
+    >
       <g>
         <g>
           <path
