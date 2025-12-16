@@ -4,7 +4,7 @@ const carsData = [
       name: "Dodge",
       model: "Challenger 362",
       year: "2018",
-      distance: "56000",
+      distance: "5600",
       location: "Germany",
       price: 41399,
       description:
@@ -17,7 +17,7 @@ const carsData = [
       name: "Volkswagen",
       model: "T-Roc TSI",
       year: "2022",
-      distance: "9100",
+      distance: "910",
       location: "Germany",
       price: 30499,
       description:
@@ -30,7 +30,7 @@ const carsData = [
       name: "Mercedes-Benz",
       model: "E250",
       year: "2017",
-      distance: "89190",
+      distance: "8919",
       location: "Czech Republic",
       price: 56099,
       description:
@@ -43,7 +43,7 @@ const carsData = [
       name: "Audi",
       model: "A5",
       year: "2016",
-      distance: "4543",
+      distance: "454",
       location: "Germany",
       price: 24149,
       description:
@@ -56,7 +56,7 @@ const carsData = [
       name: "BMW",
       model: "330",
       year: "2021",
-      distance: "35000",
+      distance: "3500",
       location: "Germany",
       price: 35199,
       description:
@@ -66,10 +66,10 @@ const carsData = [
     },
     {
       id: 6,
-      name: "DFSK",
+      name: "Volkswagen",
       model: "Seres",
       year: "2022",
-      distance: "45000",
+      distance: "4500",
       location: "Germany",
       price: 30349,
       description:
@@ -82,7 +82,7 @@ const carsData = [
       name: "BMW",
       model: "120",
       year: "2021",
-      distance: "18000",
+      distance: "1800",
       location: "Italy",
       price: 34499,
       description:
@@ -95,7 +95,7 @@ const carsData = [
       name: "Dodge",
       model: "Charger",
       year: "2017",
-      distance: "72400",
+      distance: "7240",
       location: "Czech Republic",
       price: 23049,
       description:
@@ -105,10 +105,10 @@ const carsData = [
     },
     {
       id: 9,
-      name: "Range Rover",
+      name: "Mercedes-Benzr",
       model: "Evoque",
       year: "2019",
-      distance: "97300",
+      distance: "9730",
       location: "Poland",
       price: 26349,
       description:
@@ -118,10 +118,10 @@ const carsData = [
     },
     {
       id: 10,
-      name: "MINI",
+      name: "BMW",
       model: "Cooper",
       year: "2013",
-      distance: "99598",
+      distance: "9959",
       location: "Germany",
       price: 15749,
       description:
@@ -134,7 +134,7 @@ const carsData = [
       name: "Maserati",
       model: "Ghibli",
       year: "2017",
-      distance: "46000",
+      distance: "4600",
       location: "Germany",
       price: 41399,
       description:
@@ -144,7 +144,7 @@ const carsData = [
     },
     {
       id: 12,
-      name: "Jaguar",
+      name: "Mercedes-Benzr",
       model: "XF",
       year: "2021",
       distance: "66",

@@ -5,6 +5,7 @@ import RateStar from "@/components/module/RateStar";
 import SearchForm from "@/components/module/SearchForm";
 import Services from "@/components/module/Services";
 import Banner from "@/components/template/Banner";
+import HowWork from "@/components/template/HowWork";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <RateStar/>
       <InformationBox/>
       <Category/>
+      <HowWork/>
       {/* <BannerBg/>
       <SearchForm/> */}
       {/* <Banner /> */}
