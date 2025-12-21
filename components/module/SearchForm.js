@@ -51,7 +51,7 @@ function SearchForm() {
         <div className="absolute -bottom-20 md:-bottom-10 left-0 lg:top-16 lg:left-0 lg:max-h-[450px] lg:px-5 lg:py-12 w-full overflow-visible">
           <div className=" lg:hidden w-full h-14 bg-[linear-gradient(to_top,theme(colors.indigo.900),transparent)] "></div>
           <div className="max-w-7xl px-4 lg:mx-auto bg-indigo-900 lg:bg-transparent">
-            <h1 className="lg:text-4xl text-3xl font-bold bg-indigo-900 lg:bg-transparent text-white p-3">
+            <h1 className="lg:text-4xl text-2xl font-bold bg-indigo-900 lg:bg-transparent text-white p-3">
               You choose your car online.
               <br /> We inspect it and deliver it.
             </h1>
