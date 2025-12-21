@@ -1,13 +1,6 @@
 "use client";
+import { useRouter } from "next/navigation";
 import React, { useState } from "react";
-import { IoIosArrowForward } from "react-icons/io";
-import { FaStar } from "react-icons/fa";
-import { FaStarHalf } from "react-icons/fa";
-import { FaMoneyBillTransfer } from "react-icons/fa6";
-import { RiSecurePaymentLine } from "react-icons/ri";
-import { MdVerifiedUser } from "react-icons/md";
-import { FaPlusCircle } from "react-icons/fa";
-import { FaMinusCircle } from "react-icons/fa";
 
 function SearchForm() {
   const [model, setModel] = useState("");
@@ -15,31 +8,42 @@ function SearchForm() {
   const [year, setYear] = useState("");
   const [price, setPrice] = useState("");
 
+  const router = useRouter();
+
   const selectHandler = (event) => {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     setModel(event.target.value);
-    console.log(model);
+    // console.log(model);
   };
   const mileageHandler = (event) => {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     setMileage(event.target.value);
-    console.log(mileage);
+    // console.log(mileage);
   };
-
   const yearHandler = (event) => {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     setYear(event.target.value);
-    console.log(year);
+    // console.log(year);
   };
-
   const priceHandler = (event) => {
-    console.log(event.target.value);
+    // console.log(event.target.value);
     setPrice(event.target.value);
-    console.log(price);
+    // console.log(price);
   };
 
   const buttonHandler = () => {
-    console.log("hi");
+    const newModel = model || "all";
+    const newMileage = mileage || "all";
+    const newYear = year || "all";
+    const newPrice = price || "all";
+
+    // console.log(newModel, newMileage, newYear, newPrice);
+
+    if (!model && !mileage && !year && !price) {
+      router.push("/cars");
+    } else {
+      router.push(`/filter/${newModel}/${newMileage}/${newYear}/${newPrice}`);
+    }
   };
   return (
     <>
@@ -62,6 +66,7 @@ function SearchForm() {
                 className="border  col-start-1 col-span-4 h-10 rounded-lg border-gray-400 px-2 text-gray-500 focus:border-gray-400 "
               >
                 <option
+                  disabled
                   value=""
                   className="text-gray-400 px-2 rounded-lg"
                   id="0"
@@ -128,15 +133,7 @@ function SearchForm() {
                 <option value="10000">10000</option>
                 <option value="15000">15000</option>
               </select>
-              {/* <select
-                value={year}
-                onChange={yearHandler}
-                name="year"
-                id="year"
-                className=" col-span-2 h-10 border rounded-lg border-gray-400 px-2 text-gray-500"
-              >
-                <option value="2005">2005</option>
-              </select> */}
+
               <input
                 type="number"
                 onChange={yearHandler}
@@ -158,24 +155,19 @@ function SearchForm() {
                 <option value="150000">150000</option>
                 <option value="200000">200000</option>
               </select>
-              {/* <div className=" col-span-2 flex items-center gap-x-2">
-                <input type="checkbox" name="vat" id="vat" />
-                <label htmlFor="vat">VAT deducation</label>
-              </div> */}
 
               <button
-                
                 onClick={buttonHandler}
                 className=" col-span-2 row-start-3 col-start-5 h-12 rounded-lg text-white font-bold bg-[linear-gradient(to_right,theme(colors.indigo.900),theme(colors.indigo.500))] hover:bg-indigo-500"
               >
-                1 006 907 offers
+                offers
               </button>
-              <div className="flex items-center row-start-3 col-span-2">
+              {/* <div className="flex items-center row-start-3 col-span-2">
                 <p className="text-indigo-800 font-bold text-sm underline underline-offset-4 hover:no-underline cursor-pointer">
                   Advenced search
                 </p>
                 <IoIosArrowForward />
-              </div>
+              </div> */}
             </form>
           </div>
         </div>
@@ -183,6 +175,7 @@ function SearchForm() {
       {/* only mobile view */}
       <div className=" bg-indigo-900 p-3">
         <form
+          onSubmit={(e) => e.preventDefault()}
           action=""
           className="w-full lg:hidden lg:flex-col grid grid-cols-6 gap-y-3 gap-x-3 mt-20 bg-white rounded-lg px-3 py-4 "
         >
@@ -240,7 +233,6 @@ function SearchForm() {
 
           <select
             className=" border col-start-1 col-span-3 md:col-start-5 md:col-span-2 h-10 rounded-lg border-gray-400 px-2 text-gray-500 focus:border-gray-400 "
-            name="mileage"
             value={mileage}
             onChange={mileageHandler}
             id="mileage"
@@ -254,41 +246,68 @@ function SearchForm() {
             <option value="10000">10000</option>
             <option value="15000">15000</option>
           </select>
-          <select
+          {/* <select
             name="year"
             id="year"
             className=" border h-10 col-start-4 col-span-3 md:col-start-1 md:col-span-2 rounded-lg border-gray-400 px-2 text-gray-500 focus:border-gray-400 "
           >
             <option value="2005">2005</option>
-          </select>
-
+          </select> */}
+          <input
+            type="number"
+            onChange={yearHandler}
+            placeholder="Registration from"
+            value={year}
+            // className=" col-span-2 h-10 border rounded-lg border-gray-400 px-2 text-gray-500 placeholder-gray-500"
+            className=" border h-10 col-start-4 col-span-3 md:col-start-1 md:col-span-2 rounded-lg placeholder-gray-500 border-gray-400 px-2 text-gray-500 focus:border-gray-400 "
+          />
+          {/* <select
+            onChange={priceHandler}
+            value={price}
+            className=" col-span-2 border h-10 rounded-lg border-gray-400 px-2 text-gray-500"
+          >
+            <option value="" disabled>
+              Price up to
+            </option>
+            <option value="50000">50000</option>
+            <option value="70000">70000</option>
+            <option value="100000">100000</option>
+            <option value="150000">150000</option>
+            <option value="200000">200000</option>
+          </select> */}
           <select
-            name="price up"
-            id="priceup"
+            onChange={priceHandler}
+            value={price}
             className="border  h-10 col-start-1 col-span-3 md:col-span-2 rounded-lg border-gray-400 px-2 text-gray-500 focus:border-gray-400 "
           >
+            <option value="" disabled>
+              Price up to
+            </option>
             <option value="50000">50000</option>
             <option value="70000">70000</option>
             <option value="100000">100000</option>
             <option value="150000">150000</option>
             <option value="200000">200000</option>
           </select>
-          <div className=" flex col-start-4 col-span-3 gap-x-2 md:col-span-2 items-center ">
+          {/* <div className=" flex col-start-4 col-span-3 gap-x-2 md:col-span-2 items-center ">
             <input className="" type="checkbox" name="vat" id="vat" />
             <label htmlFor="vat" className="text-gray-500">
               VAT deducation
             </label>
-          </div>
+          </div> */}
 
-          <button className="w-full col-span-full cursor-pointer md:col-start-5 md:col-span-2 md: h-12 rounded-lg text-white font-bold bg-[linear-gradient(to_right,theme(colors.indigo.900),theme(colors.indigo.500))] hover:bg-indigo-500">
-            1 006 907 offers
+          <button
+            onClick={buttonHandler}
+            className="w-full col-span-full cursor-pointer md:col-start-5 md:col-span-2 md: h-12 rounded-lg text-white font-bold bg-[linear-gradient(to_right,theme(colors.indigo.900),theme(colors.indigo.500))] hover:bg-indigo-500"
+          >
+            offers
           </button>
-          <div className="flex col-span-full md:row-start-3 md:col-start-1 md:col-span-2 items-center justify-center md:justify-start">
+          {/* <div className="flex col-span-full md:row-start-3 md:col-start-1 md:col-span-2 items-center justify-center md:justify-start">
             <p className="text-indigo-800 font-bold text-sm underline underline-offset-4 hover:no-underline cursor-pointer">
               Advenced search
             </p>
             <IoIosArrowForward />
-          </div>
+          </div> */}
         </form>
       </div>
       {/* end mobile view */}
