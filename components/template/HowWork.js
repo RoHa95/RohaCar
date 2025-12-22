@@ -12,8 +12,10 @@ function HowWork() {
         <h1 className="text-indigo-900 text-3xl font-extrabold mb-16">
           How does it work?
         </h1>
-        <div className="flex items-center justify-between w-full">
-          <div className=" w-[356px] h-[340px] flex-col items-center justify-center">
+
+        <div className="flex gap-4 md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible snap-x snap-mandatory">
+          {/* card 1 */}
+          <div className=" w-[356px] h-[340px] flex-col items-center justify-center  min-w-full md:min-w-0 snap-center">
             <img
               className="w-80 h-64"
               src="/images/h-1-x.webp"
@@ -27,6 +29,7 @@ function HowWork() {
               cars in one place.
             </p>
           </div>
+          {/* card 2 */}
           <div className=" w-[356px] h-[340px] flex-col items-center justify-center">
             <img
               className="w-80 h-64"
@@ -41,6 +44,7 @@ function HowWork() {
               decide according to the result after.
             </p>
           </div>
+          {/* card 3 */}
           <div className=" w-[356px] h-[340px] flex-col items-center justify-center">
             <img
               className="w-80 h-64"
@@ -55,6 +59,20 @@ function HowWork() {
               need to do is enjoy your new car.
             </p>
           </div>
+        </div>
+        <div
+          className="
+    flex
+    gap-4
+    overflow-x-auto
+    snap-x snap-mandatory
+    md:grid md:grid-cols-3
+    md:overflow-visible
+  "
+        >
+          <div className="min-w-full snap-center bg-red-200 h-40 rounded-xl">12</div>
+          <div className="min-w-full snap-center bg-green-200 h-40 rounded-xl" />
+          <div className="min-w-full snap-center bg-blue-200 h-40 rounded-xl" />
         </div>
       </div>
     </div>
