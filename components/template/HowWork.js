@@ -17,11 +17,11 @@ function HowWork() {
           className="flex gap-4 overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 md:overflow-visible
   "
         >
-          <div className="min-w-full snap-center bg-red-200 h-40 rounded-xl">
+          <div className="min-w-full snap-start bg-red-200 h-40 rounded-xl">
             12
           </div>
-          <div className="min-w-full snap-center bg-green-200 h-40 rounded-xl" />
-          <div className="min-w-full snap-center bg-blue-200 h-40 rounded-xl" />
+          <div className="min-w-full snap-start bg-green-200 h-40 rounded-xl" />
+          <div className="min-w-full snap-start bg-blue-200 h-40 rounded-xl" />
         </div>
       </div>
     </div>
