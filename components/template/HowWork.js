@@ -25,7 +25,7 @@ function HowWork() {
             <p className="text-indigo-950 font-bold text-2xl md:text-xl my-6">
               Choose anywhere in Europe
             </p>
-            <p className="text-indigo-950 font-thin text-sm text-center sm:text-left leading-6 lg:w-4/5 sm:pr-3 lg:pr-0 ">
+            <p className="text-indigo-950 font-thin text-lg sm:text-sm text-center sm:text-left leading-6 lg:w-4/5 sm:pr-3 lg:pr-0 ">
               No more compromises! With us, you have an unrivaled selection of
               cars in one place.
             </p>
@@ -41,7 +41,7 @@ function HowWork() {
             <p className="text-indigo-950 font-bold text-2xl md:text-xl my-6">
               We'll inspect the car closely
             </p>
-            <p className="text-indigo-950 font-thin  text-sm text-center sm:text-left leading-6 lg:w-4/5 sm:pr-3 lg:pr-0">
+            <p className="text-indigo-950 font-thin  text-lg sm:text-sm text-center sm:text-left leading-6 lg:w-4/5 sm:pr-3 lg:pr-0">
               A certified mechanic will thoroughly inspect your car. You will
               decide according to the result after.
             </p>
@@ -58,7 +58,7 @@ function HowWork() {
             <p className="text-indigo-950 font-bold text-2xl md:text-xl my-6">
               We'll deliver it to your home
             </p>
-            <p className="text-indigo-950 font-thin text-sm text-center sm:text-left leading-6 lg:w-4/5 sm:pr-3 lg:pr-0">
+            <p className="text-indigo-950 font-thin text-lg sm:text-sm text-center sm:text-left leading-6 lg:w-4/5 sm:pr-3 lg:pr-0">
               We arrange all the paperwork, registration and delivery. All you
               need to do is enjoy your new car.
             </p>
