@@ -13,9 +13,9 @@ function HowWork() {
           How does it work?
         </h1>
 
-        <div className="flex gap-4 md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible snap-x snap-mandatory">
+        <div className="flex gap-4 md:grid md:grid-cols-3 overflow-x-auto md:overflow-visible snap-x overscroll-x-contain snap-mandatory">
           {/* card 1 */}
-          <div className=" md:w-[356px] h-[340px] flex-col items-center justify-center  min-w-full md:min-w-0 snap-start">
+          <div className=" md:w-[356px] h-[340px] flex-col items-center justify-center  min-w-full md:min-w-0 snap-start scroll-ml-4">
             <img
               className="w-80 h-64"
               src="/images/h-1-x.webp"
@@ -30,7 +30,7 @@ function HowWork() {
             </p>
           </div>
           {/* card 2 */}
-          <div className=" md:w-[356px] h-[340px] flex-col items-center justify-center min-w-full md:min-w-0 snap-start">
+          <div className=" md:w-[356px] h-[340px] flex-col items-center justify-center min-w-full md:min-w-0 snap-start scroll-ml-4">
             <img
               className="w-80 h-64"
               src="/images/h-2-x.webp"
@@ -45,7 +45,7 @@ function HowWork() {
             </p>
           </div>
           {/* card 3 */}
-          <div className=" md:w-[356px] h-[340px] flex-col items-center justify-center min-w-full md:min-w-0 snap-start">
+          <div className=" md:w-[356px] h-[340px] flex-col items-center justify-center min-w-full md:min-w-0 snap-start scroll-ml-4">
             <img
               className="w-80 h-64"
               src="/images/h-3-x.webp"
