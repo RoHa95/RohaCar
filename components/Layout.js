@@ -8,7 +8,7 @@ function Layout({ children }) {
       <Header />
 
       <div className=" min-h-[600px]"> {children}</div>
-      <footer className=" bg-lime-50 text-gray-600 py-3 px-0 text-center">
+      <footer className=" bg-indigo-800 text-white py-3 px-0 text-center">
         Developed by Roghaye Halimi
       </footer>
     </>

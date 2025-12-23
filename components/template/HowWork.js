@@ -4,7 +4,7 @@ function HowWork() {
   return (
     <div
       className="
-    w-full h-[1124px] bg-gray-100 mt-24 pt-32
+    w-full h-fit bg-gray-100 my-24 pt-32
     [clip-path:polygon(0%_0%,100%_10%,100%_100%,0%_100%)]
   "
     >
